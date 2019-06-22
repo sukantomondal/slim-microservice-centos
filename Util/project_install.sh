@@ -10,10 +10,10 @@ mkdir -p slim-project/src/public
 
 # PHP composer install
 wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet
-mv composer.phar /usr/local/bin/composer
+mv composer.phar ${PROJECT_DIR}/src/composer
 
 #run composer to install slim framework
-(cd slim-project/src && php /usr/local/bin/composer require slim/slim)
+(cd slim-project/src && php ${PROJECT_DIR}/src/composer require slim/slim)
 
 echo "$(tput setaf 2)Creating project skelton ...$(tput sgr 0)"
 
