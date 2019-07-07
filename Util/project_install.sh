@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902c
 mv composer.phar ${PROJECT_DIR}/${PROJECT_NAME}/src/composer.phar
 
 #run composer to install slim framework
-(cd slim-project/src && php ${PROJECT_DIR}/${PROJECT_NAME}/src/composer.phar require slim/slim)
+(cd ${PROJECT_DIR}/${PROJECT_NAME}/src && php ${PROJECT_DIR}/${PROJECT_NAME}/src/composer.phar require slim/slim)
 
 echo "$(tput setaf 2)Creating project skelton ...$(tput sgr 0)"
 
